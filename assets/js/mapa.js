@@ -1,194 +1,148 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* =========================================================
+   Mapas Leaflet de las rutas culturales.
 
-    var lugares = [
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
+   Inicializa cualquier contenedor del tipo:
+     <div class="mapa-ruta" data-ruta="historica|productiva|todas"></div>
+     <div class="mapa-ruta" data-hito="capilla"></div>   (mapa de un solo punto)
 
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        },
-        {
-            titulo: "Bodega Pupatto",
-            imagen: "assets/images/bp1.jpg",
-            descripcion: "Una bodega con mucha historia, fundada en el año 1941 y hoy comandada por la cuarta generación. El Sr. Emiliano, productor vitivinícola de cuarta generación, es el responsable de la bodega.",
-            web: "bodegaPuppato.html",
-            instagram: "https://www.instagram.com/puppatofamilywines/reels/"
-        }
-    ];
+   Los datos salen de datos-rutas.js y el trazado de rutas-geo.js.
+   No se hacen pedidos a servicios de ruteo.
+   ========================================================= */
 
-    // Puntos turísticos
-    var puntos = [
-        [-33.07525468767633, -68.582508505586], //corrales negros
-        [-33.11247083912999, -68.59922660558345], //benedetti
-        [-33.09454710762305, -68.58269190558468], //bodega alter ego
-        [-33.09647835202471, -68.5728215957926], //escuale g. a posadas
-        [-33.097148385437414, -68.57226223184199], //plaza mercedes tomasa de san martin
-        [-33.097651589908914, -68.57180047674866], //capilla nuestra señora de la luz
-        [-33.10088133186869, -68.56488259209146], //pupatto
-        [-33.10580705638048, -68.55159731907658], //olivícola barroso
-        [-33.11169889090452, -68.54578283441923], //nietas de lipari
-        [-33.11364683301512, -68.54512979024025], //mon al agua y al trabajo
-        [-33.1122032437294, -68.55257506510546] //bodega productores del valle
-    ];
+(function () {
+  'use strict';
 
-    var map = L.map('map').setView(puntos[0], 13);
+  if (typeof L === 'undefined' || !window.DATOS_RUTAS) return;
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+  var GEO = window.RUTAS_GEO || {};
 
-    async function dibujarRutaGraphHopper(puntos) {
-        const apiKey = '885536fc-8b0b-435e-9cf8-be1753b09238';
+  function capaBase() {
+    return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+  }
 
-        // Dividir puntos en grupos de 5, con solapamiento en los extremos
-        async function obtenerSegmento(segmento) {
-            const body = {
-                points: segmento.map(p => [p[1], p[0]]),
-                vehicle: 'car',
-                locale: 'es',
-                points_encoded: false
-            };
+  function icono(hito, ruta) {
+    var extra = ruta.id === 'productiva' ? ' marcador-numero--productiva' : '';
+    return L.divIcon({
+      className: '',
+      html: '<div class="marcador-numero' + extra + '"><span>' + hito.n + '</span></div>',
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -30]
+    });
+  }
 
-            const response = await fetch(`https://graphhopper.com/api/1/route?key=${apiKey}`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(body)
-            });
+  /* El popup solo muestra texto que viene del documento: el nombre del hito
+     y su resumen. El único agregado es el número de orden dentro de la ruta. */
+  function popup(hito, ruta) {
+    var etiquetaExtra = ruta.id === 'productiva' ? ' popup-hito__etiqueta--productiva' : '';
+    var titulo = hito.url
+      ? '<a href="' + hito.url + '">' + hito.nombre + '</a>'
+      : hito.nombre;
 
-            const data = await response.json();
+    return '<div class="popup-hito">' +
+      '<img src="' + hito.imagen + '" alt="" loading="lazy">' +
+      '<div class="popup-hito__cuerpo">' +
+        '<span class="popup-hito__etiqueta' + etiquetaExtra + '">' + ruta.nombre + ' · ' + hito.n + '</span>' +
+        '<h4>' + titulo + '</h4>' +
+        (hito.resumen ? '<p>' + hito.resumen + '</p>' : '') +
+      '</div>' +
+    '</div>';
+  }
 
-            if (data.paths && data.paths.length > 0) {
-                return data.paths[0].points.coordinates.map(c => [c[1], c[0]]);
-            }
-            return [];
-        }
+  function dibujarRuta(mapa, ruta, capas) {
+    var grupo = L.layerGroup().addTo(mapa);
+    capas[ruta.id] = grupo;
 
-        try {
-            // Dividir en grupos: [0-4], [4-8], [8-10]
-            const segmentos = [];
-            for (let i = 0; i < puntos.length - 1; i += 4) {
-                segmentos.push(puntos.slice(i, i + 5));
-            }
+    var puntos = ruta.hitos.map(function (h) { return h.coords; });
+    var trazado = (GEO[ruta.id] && GEO[ruta.id].length) ? GEO[ruta.id] : puntos;
 
-            // Obtener todas las rutas en paralelo
-            const resultados = await Promise.all(segmentos.map(s => obtenerSegmento(s)));
+    L.polyline(trazado, {
+      color: ruta.color,
+      weight: 4,
+      opacity: .85,
+      dashArray: '9, 9',
+      lineCap: 'round'
+    }).addTo(grupo);
 
-            // Unir todas las coordenadas
-            const coordsTotal = resultados.flat();
-
-            if (coordsTotal.length > 0) {
-                L.polyline(coordsTotal, {
-                    color: 'red',
-                    weight: 4,
-                    dashArray: '10, 10'
-                }).addTo(map);
-            }
-
-        } catch (error) {
-            console.error('Error GraphHopper:', error);
-            L.polyline(puntos, { color: 'red', weight: 4, dashArray: '10, 10' }).addTo(map);
-        }
-    }
-
-    dibujarRutaGraphHopper(puntos);
-
-    puntos.forEach((coord, index) => {
-
-        var numeroIcono = L.divIcon({
-            className: '',
-            html: `<div class="marker-number">${index + 1}</div>`,
-            iconSize: [30, 30]
-        });
-
-        var marker = L.marker(coord, {icon: numeroIcono}).addTo(map);
-
-        marker.on('click', function () {
-
-            // Zoom automático con animación
-            map.flyTo(coord, 15, {duration: 1.5});
-
-            // Abrir modal
-            abrirModal(index);
-
-        });
-
+    ruta.hitos.forEach(function (hito) {
+      L.marker(hito.coords, { icon: icono(hito, ruta), title: hito.n + '. ' + hito.nombre })
+        .bindPopup(popup(hito, ruta), { minWidth: 250, maxWidth: 250 })
+        .addTo(grupo);
     });
 
+    return puntos;
+  }
 
-    function abrirModal(index) {
-        document.getElementById("modalTitulo").innerText = lugares[index].titulo;
-        document.getElementById("modalImagen").src = lugares[index].imagen;
-        document.getElementById("modalDescripcion").innerText = lugares[index].descripcion;
+  function encuadrar(mapa, puntos) {
+    if (!puntos.length) return;
+    mapa.fitBounds(L.latLngBounds(puntos), { padding: [45, 45], maxZoom: 15 });
+  }
 
-        document.getElementById("modalWeb").href = lugares[index].web;
-        document.getElementById("modalInstagram").href = lugares[index].instagram;
+  /* ---------- Mapas de ruta ---------- */
 
-        $('#infoModal').modal('show');
-    }
+  Array.prototype.forEach.call(document.querySelectorAll('.mapa-ruta[data-ruta]'), function (caja) {
+    var cual = caja.getAttribute('data-ruta');
+    var rutas = window.DATOS_RUTAS.obtenerRutas(cual);
+    if (!rutas.length) return;
 
-});
+    var mapa = L.map(caja, { scrollWheelZoom: false });
+    capaBase().addTo(mapa);
+    mapa.on('click', function () { mapa.scrollWheelZoom.enable(); });
+    mapa.on('mouseout', function () { mapa.scrollWheelZoom.disable(); });
+
+    var capas = {};
+    var todos = [];
+    rutas.forEach(function (ruta) {
+      todos = todos.concat(dibujarRuta(mapa, ruta, capas));
+    });
+    encuadrar(mapa, todos);
+
+    /* Filtros por ruta, si la página los declara junto al mapa. */
+    var filtros = document.querySelectorAll('.mapa-filtro[data-mapa="' + caja.id + '"]');
+    Array.prototype.forEach.call(filtros, function (boton) {
+      boton.addEventListener('click', function () {
+        var elegida = boton.getAttribute('data-ruta');
+
+        Array.prototype.forEach.call(filtros, function (b) {
+          b.classList.toggle('is-activo', b === boton);
+          b.setAttribute('aria-pressed', String(b === boton));
+        });
+
+        var visibles = [];
+        Object.keys(capas).forEach(function (id) {
+          var mostrar = (elegida === 'todas' || elegida === id);
+          if (mostrar) {
+            capas[id].addTo(mapa);
+            visibles = visibles.concat(window.DATOS_RUTAS.rutas[id].hitos.map(function (h) { return h.coords; }));
+          } else {
+            mapa.removeLayer(capas[id]);
+          }
+        });
+        encuadrar(mapa, visibles);
+      });
+    });
+  });
+
+  /* ---------- Mapa de un solo hito ---------- */
+
+  Array.prototype.forEach.call(document.querySelectorAll('.mapa-ruta[data-hito]'), function (caja) {
+    var encontrado = window.DATOS_RUTAS.buscarHito(caja.getAttribute('data-hito'));
+    if (!encontrado) return;
+
+    var mapa = L.map(caja, {
+      scrollWheelZoom: false,
+      dragging: !L.Browser.mobile,
+      zoomControl: true
+    }).setView(encontrado.hito.coords, 15);
+
+    capaBase().addTo(mapa);
+
+    L.marker(encontrado.hito.coords, {
+      icon: icono(encontrado.hito, encontrado.ruta),
+      title: encontrado.hito.nombre
+    }).addTo(mapa);
+  });
+})();

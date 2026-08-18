@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Bodega Benedetti · Explorar Los Barriales</title>
+  <meta name="description" content="Bodegas y Viñedos Benedetti es una empresa familiar fundada en 1948 por Próspero Antonio Benedetti, descendiente de inmigrantes italianos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body data-seccion="productiva">
+
+<a class="saltar-al-contenido" href="#contenido">Saltar al contenido</a>
+
+<div id="site-nav"></div>
+
+<header class="portada portada--interna" style="background-image: url('assets/images/Benedetti.jpg');">
+  <div class="container">
+    <nav class="migas" aria-label="Migas de pan"><a href="index.html">Inicio</a><span>›</span><a href="rutaProductiva.html">Ruta Productiva</a><span>›</span>Bodega Benedetti</nav>
+    <span class="portada__kicker portada__kicker--oliva">Ruta Productiva · 3</span>
+    <h1>Bodega Benedetti</h1>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="seccion">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8">
+          <article class="prosa">
+            <p class="entradilla">Bodegas y Viñedos Benedetti es una empresa familiar fundada en 1948 por Próspero Antonio Benedetti, descendiente de inmigrantes italianos. Actualmente se encuentra en manos de la segunda y tercera generación de la familia, que ha dado continuidad a la actividad iniciada hace más de siete décadas y ha incorporado nuevas tecnologías y líneas de producción.</p>
+
+            <p>Si bien sus orígenes están ligados a la elaboración y comercialización de vinos, a partir de la década de 1990 la empresa sumó la producción de jugo concentrado de uva, con inversiones tecnológicas de vanguardia y de gran calidad.</p>
+
+            <p>En la actualidad alcanza una molienda aproximada de 20 millones de kg entre uvas, entre variedades criollas, Pedro Giménez, Bonarda, Tempranillo, Cabernet Sauvignon, Ugni Blanc y Sauvignon Blanc.</p>
+
+            <p>Una de las particularidades del establecimiento es la diversificación de su producción. Alrededor del 30 % se destina a la elaboración de vinos para el mercado local, mientras que el resto se utiliza para producir mosto virgen que luego se concentra, se pasteuriza, se envasa y se exporta. Entre sus destinos se encuentran países diversos como Perú, Colombia, Canadá, Sudáfrica, Tailandia y China, además de otros mercados internacionales. En 2025 fue distinguida por el Honorable Concejo Deliberante de Junín por su trayectoria y aporte a la actividad productiva local. Por otro lado, en el año 2021 recibieron el Premio de Mujeres Emprendedoras otorgado por el Banco de la Nación Argentina.</p>
+
+            <p>Aunque actualmente la bodega no recibe visitas turísticas, sus responsables tienen interés en incorporar esta actividad en el futuro. Su extensa trayectoria, la continuidad familiar y la combinación entre producción vitivinícola tradicional, innovación tecnológica y exportación la convierten en un buen ejemplo de las transformaciones experimentadas por el paisaje productivo de Los Barriales.</p>
+
+            <figure class="figura-hito">
+              <img src="assets/images/benedetti-planta.png" alt="Bodega Benedetti" loading="lazy">
+            </figure>
+
+          </article>
+
+          <nav class="hito-nav" aria-label="Navegación entre hitos">
+            <a href="corralesNegros.html"><small>←</small><strong>Bodega Corrales Negros</strong></a>
+            <a class="siguiente" href="alterEgo.html"><small>→</small><strong>Bodega Alter Ego</strong></a>
+          </nav>
+        </div>
+
+        <div class="col-lg-4">
+          <aside class="ficha">
+            <div class="ficha__mapa mapa-ruta" data-hito="benedetti"
+                 role="region" aria-label="Ubicación en el mapa"></div>
+            <a class="btn-sitio btn-oliva" href="https://www.google.com/maps/search/?api=1&amp;query=-33.11247083912999%2C-68.59922660558345"
+               target="_blank" rel="noopener">Cómo llegar</a>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/js/datos-rutas.js"></script>
+<script src="assets/js/rutas-geo.js"></script>
+<script src="assets/js/mapa.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

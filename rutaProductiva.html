@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>RUTA PRODUCTIVA. Tras las huellas de la vitivinicultura y el trabajo rural · Explorar Los Barriales</title>
+  <meta name="description" content="conocer y valorar el paisaje productivo de Los Barriales a través de los elementos que explican su conformación y transformaciones: la red de riego, cultivos, bodegas y otros estab">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body data-seccion="productiva">
+
+<a class="saltar-al-contenido" href="#contenido">Saltar al contenido</a>
+
+<div id="site-nav"></div>
+
+<header class="portada portada--interna" style="background-image: url('assets/images/Puppato%20Family%20Wines.jpeg');">
+  <div class="container">
+    <nav class="migas" aria-label="Migas de pan"><a href="index.html">Inicio</a><span>›</span>Ruta Productiva</nav>
+    <span class="portada__kicker portada__kicker--oliva">Ruta Productiva</span>
+    <h1>RUTA PRODUCTIVA. Tras las huellas de la vitivinicultura y el trabajo rural</h1>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="seccion">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="objetivo"><strong>Objetivo:</strong> conocer y valorar el paisaje productivo de Los Barriales a través de los elementos que explican su conformación y transformaciones: la red de riego, cultivos, bodegas y otros establecimientos agroindustriales, muchos de los cuales continúan en actividad.</p>
+
+          <h2 class="seccion__titulo">Descripción</h2>
+
+          <div class="audioguia audioguia--oliva" data-target="#texto-ruta" data-audio=""></div>
+
+          <div class="prosa" id="texto-ruta">
+            <p class="entradilla">Agua, tierra y trabajo se combinan en esta ruta para contar una parte fundamental de la historia de Los Barriales. El recorrido propone descubrir cómo el aprovechamiento del agua y el desarrollo de la agricultura y la agroindustria transformaron el territorio y dieron forma a un paisaje productivo que todavía conserva numerosas huellas de su pasado.</p>
+
+            <p>El agua constituye uno de los principales hilos conductores. Canales, acequias e hijuelas hicieron posible el desarrollo agrícola en un territorio de tierras secas, mientras que el arroyo Claro recuerda la presencia histórica de bañados y humedales que también condicionaron las formas de ocupar y aprovechar este espacio. Aunque hoy gran parte de su cauce permanece seco, su impronta todavía puede reconocerse en el paisaje. En distintos puntos del recorrido, las vistas sobre áreas cultivadas permiten observar las sucesivas “capas” que construyeron este paisaje rural.</p>
+
+            <p>El recorrido comienza precisamente en el arroyo Claro, un humedal que en el año 2020 fue declarado por la Secretaría de Ambiente de Mendoza “de interés para la conservación”. Originado a partir de la desembocadura del arroyo Claro, en esta zona de relieve bajo y con escaso drenaje, como es característico en las planicies orientales de la provincia de Mendoza. Desde allí se aproxima a la antigua zona de <a href="corralesNegros.html">Corrales Negros</a>, vinculada al Camino Real y al tránsito de viajeros y mercancías. En este sector se encuentra la Bodega Corrales Negros, cuyo nombre mantiene viva la memoria de aquel antiguo paraje. .</p>
+
+            <p>A partir de allí, el recorrido se adentra en el paisaje agroindustrial de Los Barriales. La ruta provincial 60 funciona como su principal eje y concentra buena parte de los establecimientos productivos del distrito. Además, es el eje sobre el cual se ha desarrollado el parque Industrial (creado por ordenanza en el año 2013).</p>
+
+            <p>El itinerario permite conocer las bodegas <a href="benedetti.html">Benedetti</a>, Alter Ego, <a href="bodegaPuppato.html">Juan Puppato</a>, <a href="bodegaPupinco.html">Pupinco</a>, Finca Santa María y <a href="nietasDeLipari.html">Nietas de Liparí</a>, además de la Olivícola Barroso Hermanos. Esta diversidad muestra que la identidad productiva de Los Barriales trasciende la vitivinicultura y comprende distintas actividades agrícolas y agroindustriales. La presencia de una bodega de producción orgánica, establecimientos que comienzan a vincularse con el turismo y otros de larga trayectoria permite, además, observar diferentes formas de continuidad y renovación de la actividad productiva.</p>
+
+            <p>Hacia el final del recorrido, el <a href="monumentoAguaTrabajo.html">Monumento al Agua y al Trabajo</a> sintetiza dos de los elementos que hicieron posible la transformación de este territorio: el aprovechamiento del recurso hídrico y el esfuerzo de generaciones dedicadas a las actividades agrícolas. Desde allí, la ruta continúa hasta la Bodega Hugo Zamora, último punto de un itinerario que invita a comprender el paisaje no como una imagen estática, sino como el resultado de una historia de trabajo, producción y transformación.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--arena" id="mapa">
+    <div class="container">
+      <div class="mapa-ruta reveal" id="mapa-productiva" data-ruta="productiva"
+           role="application" aria-label="Mapa de la Ruta Productiva"></div>
+    </div>
+  </section>
+
+  <section class="seccion" id="hitos">
+    <div class="container">
+      <div class="seccion__encabezado seccion__encabezado--centrado reveal">
+        <h2 class="seccion__titulo">Conocé la historia de los hitos</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="arroyoClaro.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">1</span>
+              <img src="assets/images/placeholder.svg" alt="Arroyo Claro" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Arroyo Claro</h3>
+              <p class="hito-card__resumen">El Humedal arroyo Claro se localiza al noreste del distrito Los Barriales, sobre el Carril Nuevo (RP61), a 700 metros al norte de la Ruta provincial 60, s/n.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="corralesNegros.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">2</span>
+              <img src="assets/images/Corrales%20Negros.jpeg" alt="Bodega Corrales Negros" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Corrales Negros</h3>
+              <p class="hito-card__resumen">El nombre de esta bodega conserva la memoria de un antiguo paraje vinculado con los caminos que atravesaban la zona desde la época colonial.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="benedetti.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">3</span>
+              <img src="assets/images/Benedetti.jpg" alt="Bodega Benedetti" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Benedetti</h3>
+              <p class="hito-card__resumen">Bodegas y Viñedos Benedetti es una empresa familiar fundada en 1948 por Próspero Antonio Benedetti, descendiente de inmigrantes italianos.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="alterEgo.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">4</span>
+              <img src="assets/images/placeholder.svg" alt="Bodega Alter Ego" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Alter Ego</h3>
+              <p class="hito-card__resumen">Se ubica sobre la Ruta Provincial 60, y fue construida en 1966.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="bodegaPuppato.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">5</span>
+              <img src="assets/images/bodegaPupatto.png" alt="Bodega Juan Puppato" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Juan Puppato</h3>
+              <p class="hito-card__resumen">Localizada sobre Ruta Provincial 60, a 100 metros al oeste de calle Cura. Fue construida en 1941, aunque los viñedos datan de 1910.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="bodegaPupinco.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">6</span>
+              <img src="assets/images/Bodega%20Pupinco.jpeg" alt="Bodega Pupinco" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Pupinco</h3>
+              <p class="hito-card__resumen">Construida en 1981, la Bodega Pupinco constituye un ejemplo de arquitectura industrial de líneas racionalistas.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <div class="hito-card hito-card--sin-pagina hito-card--productiva">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">7</span>
+              <img src="assets/images/placeholder.svg" alt="Bodega Finca Santa María" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Finca Santa María</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="olivicolaBarroso.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">8</span>
+              <img src="assets/images/olivicolaBarroso.jpeg" alt="Olivícola Barroso hnos" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Olivícola Barroso hnos</h3>
+              <p class="hito-card__resumen">Aunque la vitivinicultura constituye la actividad agrícola más característica de Mendoza, el cultivo del olivo también posee una extensa trayectoria en la provincia.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="nietasDeLipari.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">9</span>
+              <img src="assets/images/Nietas%20de%20Lipar%C3%AD.jpeg" alt="Bodega Nietas de Liparí" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Nietas de Liparí</h3>
+              <p class="hito-card__resumen">La Bodega Nietas de Liparí presenta una característica que la distingue dentro del paisaje vitivinícola de Los Barriales: es la única del distrito dedicada a la producción orgánica.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="informadorTuristico.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">10</span>
+              <img src="assets/images/placeholder.svg" alt="Informador turístico de Junín" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Informador turístico de Junín</h3>
+              <p class="hito-card__resumen">Se localiza en el predio contiguo a la rotonda del Agua y el Trabajo, sobre la Ruta Provincial 60 , en Los Barriales.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <a class="hito-card hito-card--productiva" href="monumentoAguaTrabajo.html">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">11</span>
+              <img src="assets/images/placeholder.svg" alt="Monumento al Agua y al Trabajo" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Monumento al Agua y al Trabajo</h3>
+              <p class="hito-card__resumen">Este hito se localiza en la rotonda de calle Miguez y Ruta Provincial 60 , rodeado por un paisaje donde todavía predominan las áreas cultivadas mayormente con vid y olivos.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 reveal">
+          <div class="hito-card hito-card--sin-pagina hito-card--productiva">
+            <div class="hito-card__figura">
+              <span class="hito-card__numero">12</span>
+              <img src="assets/images/placeholder.svg" alt="Bodega Hugo Zamora" loading="lazy">
+            </div>
+            <div class="hito-card__cuerpo">
+              <h3 class="hito-card__titulo">Bodega Hugo Zamora</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/js/datos-rutas.js"></script>
+<script src="assets/js/rutas-geo.js"></script>
+<script src="assets/js/mapa.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/audioguia.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

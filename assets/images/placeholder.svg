@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="presentation">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6EFE2"/>
+      <stop offset="60%" stop-color="#EADFC9"/>
+      <stop offset="100%" stop-color="#DFCFB2"/>
+    </linearGradient>
+    <linearGradient id="suelo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9BA9B"/>
+      <stop offset="100%" stop-color="#B7A585"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#cielo)"/>
+
+  <!-- sol -->
+  <circle cx="618" cy="150" r="52" fill="#C9A24A" opacity=".38"/>
+
+  <!-- cordillera -->
+  <path d="M0 372 L118 300 L196 342 L286 268 L392 336 L470 292 L568 348 L664 300 L800 358 L800 420 L0 420 Z"
+        fill="#A99781" opacity=".55"/>
+  <path d="M0 392 L96 344 L188 380 L292 320 L388 372 L500 330 L604 380 L706 340 L800 386 L800 440 L0 440 Z"
+        fill="#8E7C64" opacity=".45"/>
+
+  <!-- alameda -->
+  <g fill="#7C8B54" opacity=".5">
+    <ellipse cx="112" cy="392" rx="9" ry="40"/>
+    <ellipse cx="140" cy="386" rx="8" ry="34"/>
+    <ellipse cx="672" cy="390" rx="9" ry="38"/>
+    <ellipse cx="700" cy="396" rx="8" ry="32"/>
+  </g>
+
+  <!-- suelo -->
+  <rect y="418" width="800" height="182" fill="url(#suelo)"/>
+
+  <!-- hileras de viñedo -->
+  <g stroke="#8B7A5E" stroke-width="3" stroke-linecap="round" opacity=".55">
+    <path d="M-20 452 L820 436"/>
+    <path d="M-20 486 L820 462"/>
+    <path d="M-20 528 L820 494"/>
+    <path d="M-20 580 L820 534"/>
+  </g>
+  <g fill="#6E1E2B" opacity=".28">
+    <circle cx="120" cy="450" r="5"/><circle cx="300" cy="447" r="5"/><circle cx="480" cy="443" r="5"/><circle cx="660" cy="440" r="5"/>
+    <circle cx="70" cy="484" r="6"/><circle cx="290" cy="478" r="6"/><circle cx="510" cy="472" r="6"/><circle cx="730" cy="466" r="6"/>
+    <circle cx="160" cy="522" r="7"/><circle cx="420" cy="512" r="7"/><circle cx="680" cy="502" r="7"/>
+  </g>
+</svg>
