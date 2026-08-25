@@ -1,0 +1,11 @@
+en el header tienen que estar las siguientes palabras que lleven a sus respectivas paginas: inicio, contexo general, ruta histórica, ruta productiva, protagonistas, bibliografía. Dentro de protagonistas, va el la imagen: @grafico-listado-de-productores.jpg
+
+Luego, en la parte de unión vecinal, se modificó una parte del texto en @BorradorBarrialesActualizado. asi que compará eso y actualízalo en la página.
+
+@ruta-productiva.mp4 es el audioguía que debes poner en la parte de ruta productiva, y @ruta-historica.mp4 el audio para tura histórica.
+
+Colocá las siguientes imágenes en este orden en "molinoOrfila.html":
+
+1. Bodegon-y-Galerias-de-Orfilia.png
+2. EstablecimientoOrfilia.png
+3. MolinoOrfilia

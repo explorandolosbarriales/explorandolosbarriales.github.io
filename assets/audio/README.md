@@ -2,32 +2,27 @@
 
 Esta carpeta guarda las grabaciones de las audioguías.
 
-Mientras esté vacía, el sitio **igual tiene audioguía**: el navegador lee el texto
-en voz alta con la síntesis de voz del dispositivo (Web Speech API), así que la
-opción de escuchar desde el celular ya funciona.
+Sólo se muestran audioguías **grabadas**. No hay lectura automática con la voz
+del navegador: si una página no tiene grabación, no aparece el reproductor.
 
-## Cómo pasar a la grabación real
+## Grabaciones actuales
 
-1. Grabar el audio y exportarlo a MP3 (recomendado: 128 kbps mono, para que
-   cargue rápido en el celular).
-2. Guardar el archivo acá con uno de estos nombres:
+| Página | Archivo |
+|---|---|
+| Ruta Histórica | `ruta-historica.mp4` |
+| Ruta Productiva | `ruta-productiva.mp4` |
 
-   | Página | Archivo |
-   |---|---|
-   | Contextualización general | `contextualizacion.mp3` |
-   | Ruta Histórica | `ruta-historica.mp3` |
-   | Ruta Productiva | `ruta-productiva.mp3` |
+## Cómo agregar una audioguía nueva
 
-3. En el HTML de esa página, buscar el bloque de la audioguía y completar el
-   atributo `data-audio`:
+1. Guardar la grabación en esta carpeta (mp4 o mp3; recomendado 128 kbps mono,
+   para que cargue rápido en el celular).
+2. En el HTML de esa página, agregar el bloque con la ruta del archivo:
 
    ```html
-   <!-- antes -->
-   <div class="audioguia" data-target="#texto-contextualizacion" data-audio=""></div>
-
-   <!-- después -->
-   <div class="audioguia" data-target="#texto-contextualizacion" data-audio="assets/audio/contextualizacion.mp3"></div>
+   <div class="audioguia" data-audio="assets/audio/nombre.mp4"></div>
    ```
 
-No hay que tocar nada más: el reproductor cambia solo de lector de voz a
-reproductor de audio.
+3. Verificar que la página cargue `assets/js/audioguia.js` antes de
+   `assets/js/site.js`.
+
+No hay que tocar nada más.

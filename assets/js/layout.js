@@ -17,9 +17,11 @@
      "RUTA HISTÓRICA" y "RUTA PRODUCTIVA". "Inicio" es sólo navegación. */
   var enlaces = [
     { id: 'inicio', texto: 'Inicio', url: 'index.html' },
-    { id: 'contexto', texto: 'Contextualización general', url: 'contextualizacionGeneral.html' },
+    { id: 'contexto', texto: 'Contexto general', url: 'contextualizacionGeneral.html' },
     { id: 'historica', texto: 'Ruta Histórica', url: 'rutaHistorica.html' },
-    { id: 'productiva', texto: 'Ruta Productiva', url: 'rutaProductiva.html' }
+    { id: 'productiva', texto: 'Ruta Productiva', url: 'rutaProductiva.html' },
+    { id: 'protagonistas', texto: 'Protagonistas', url: 'protagonistas.html' },
+    { id: 'bibliografia', texto: 'Bibliografía', url: 'bibliografia.html' }
   ];
 
   var marcaSvg =

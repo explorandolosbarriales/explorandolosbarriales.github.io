@@ -154,7 +154,7 @@ img { max-width: 100%; height: auto; }
 .nav-lista {
   display: flex;
   align-items: center;
-  gap: .35rem;
+  gap: .2rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -162,10 +162,11 @@ img { max-width: 100%; height: auto; }
 .nav-lista a {
   display: block;
   color: rgba(255, 255, 255, .88);
-  font-size: .92rem;
+  font-size: .88rem;
   font-weight: 500;
-  padding: .5rem .85rem;
+  padding: .5rem .7rem;
   border-radius: 999px;
+  white-space: nowrap;
   transition: background-color .18s ease, color .18s ease;
 }
 .nav-lista a:hover { background: rgba(255, 255, 255, .14); color: #fff; text-decoration: none; }
@@ -321,6 +322,14 @@ img { max-width: 100%; height: auto; }
 .prosa li { margin-bottom: .4rem; }
 .prosa a { border-bottom: 1px solid rgba(110, 30, 43, .35); }
 
+/* Bibliografía: sin viñetas y con sangría francesa. */
+.prosa ul.bibliografia { list-style: none; padding-left: 0; }
+.prosa ul.bibliografia li {
+  padding-left: 1.6rem;
+  text-indent: -1.6rem;
+  margin-bottom: .9rem;
+}
+
 .prosa .entradilla {
   font-size: 1.24rem;
   line-height: 1.6;
@@ -397,6 +406,12 @@ img { max-width: 100%; height: auto; }
   background: var(--arena);
 }
 .figura-hito img { width: 100%; display: block; }
+.figura-hito figcaption {
+  font-size: .84rem;
+  color: var(--gris);
+  padding: .7rem 1rem;
+  background: #fff;
+}
 
 /* ---------- Tarjetas de ruta ---------- */
 
