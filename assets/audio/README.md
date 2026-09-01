@@ -9,6 +9,8 @@ del navegador: si una página no tiene grabación, no aparece el reproductor.
 
 | Página | Archivo |
 |---|---|
+| Contexto general (parte 1) | `contexto-general-1.mp3` |
+| Contexto general (parte 2) | `contexto-general-2.mp3` |
 | Ruta Histórica | `ruta-historica.mp4` |
 | Ruta Productiva | `ruta-productiva.mp4` |
 

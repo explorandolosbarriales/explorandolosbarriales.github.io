@@ -1,11 +1,71 @@
-en el header tienen que estar las siguientes palabras que lleven a sus respectivas paginas: inicio, contexo general, ruta histórica, ruta productiva, protagonistas, bibliografía. Dentro de protagonistas, va el la imagen: @grafico-listado-de-productores.jpg
+Cambios nuevos (en general, las rutas que te indico están todas dentro de la carpeta C:\Users\spaul\OneDrive\Documentos\clari\Proyecto CPC UNCuyo- Barriales-20260901T175839Z-1-001):
 
-Luego, en la parte de unión vecinal, se modificó una parte del texto en @BorradorBarrialesActualizado. asi que compará eso y actualízalo en la página.
+1. La imagen que esta junto a este texto:
 
-@ruta-productiva.mp4 es el audioguía que debes poner en la parte de ruta productiva, y @ruta-historica.mp4 el audio para tura histórica.
+	Los Barriales: un territorio modelado por el agua, los caminos y la vitivinicultura
 
-Colocá las siguientes imágenes en este orden en "molinoOrfila.html":
+	El distrito Los Barriales constituye uno de los territorios históricos más relevantes del departamento de 	Junín. Su identidad se construyó a partir de tres elementos que marcaron su desarrollo desde la época 	colonial: el agua, los caminos y, posteriormente, la vitivinicultura.
 
-1. Bodegon-y-Galerias-de-Orfilia.png
-2. EstablecimientoOrfilia.png
-3. MolinoOrfilia
+	Contexto general
+
+	Cambiala por esta: "20260708_104702_.jpg"
+
+2. La foto que represente a la ruta histórica en el index, dentro de la sección rutas culturalles son:
+
+	ruta histórica: "PORTADA RUTA HIST."
+	ruta productiva: "PORTADA RUTA PROD."
+
+3. Luego, en la portada de rutaHistorica.html poner esta imagen: "Presentación ruta histórica".
+
+4. Leer nuevamente el apartado de bibliografía, ya que se actuallizo. Cambia lo necesario para que quede TAL CUAL esta en el Word.
+
+5. en el footer, hay que agregar los logos institucionales también, están por orden de jerarquía en la carpeta: "Proyecto CPC UNCuyo- Barriales\Poster\Logos"
+
+6. El mapa de las rutas hay que actualizarlo por el siguiente orden:
+
+	Ruta histórica: 
+
+		1. Molino Orfila
+
+		2. Unión Vecinal
+		
+		3. Plaza Mercedes Tomasa y Pirámide Los Barriales
+
+		4. Capilla Nuestra Señora de la Luz
+
+		5. Escuela Gervasio Posadas
+
+		6. Estación Benjamín Matienzo
+
+		7. Cementerio distrital
+
+	Ruta productiva:
+
+		1. Arroyo Claro
+
+		2. Bodega Corrales Negros
+
+		3. Bodega Benedetti
+
+		4. Bodega Alter Ego
+
+		5. Bodega Juan Puppato
+
+		6. Bodega Pupinco
+
+		7. Olivícola Barroso Hnos.
+
+		8. Bodega Nietas de Liparí
+
+		9. Monumento al Agua y al Trabajo
+
+
+7. Por otro lado, te dejo mas audio guias en C:\Users\spaul\OneDrive\Documentos\clari\turismo\assets\audio:
+
+	Contexto General parte 1: "WhatsApp Audio 2026-09-01 at 13.00.58"
+	Contexto general parte 2: "WhatsApp Audio 2026-09-01 at 14.32.08"
+
+
+Si queres cambiar algunos nombres como el de los audios, o imagenes no hay problema. Lo único es que no hagas cambios de más. solo lo que te pido y listo.
+	
+		

@@ -765,6 +765,36 @@ img { max-width: 100%; height: auto; }
 .pie li { margin-bottom: .55rem; }
 .pie a { color: rgba(255, 255, 255, .78); }
 .pie a:hover { color: var(--dorado); text-decoration: none; }
+/* Logos institucionales, en el orden de jerarquía del proyecto.
+   Cada uno va sobre una placa blanca porque los originales fueron
+   pensados para fondo claro y el pie es de color tierra. */
+.pie__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0 0 2.2rem;
+  padding: 0 0 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+.pie__logo {
+  margin: 0;
+  background: #fff;
+  border-radius: 6px;
+  padding: .7rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.pie__logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 48px;
+  max-width: 200px;
+}
+
 .pie__legal {
   max-width: 90ch;
   margin: 0 auto;

@@ -4,11 +4,16 @@
    Uso en el HTML:
      <div class="audioguia" data-audio="assets/audio/nombre.mp4"></div>
 
+   Con data-titulo se cambia el rótulo, útil cuando una página tiene
+   la grabación partida en varios archivos:
+     <div class="audioguia" data-audio="..." data-titulo="Audioguía · parte 1"></div>
+
    Sólo se muestran las audioguías GRABADAS. Si data-audio está
    vacío o el bloque no lo tiene, no se muestra nada: no hay
    lectura automática con la voz del navegador.
 
-   Hoy existen dos grabaciones:
+   Hoy existen estas grabaciones:
+     Contexto general -> assets/audio/contexto-general-1.mp3 y -2.mp3
      Ruta Histórica   -> assets/audio/ruta-historica.mp4
      Ruta Productiva  -> assets/audio/ruta-productiva.mp4
    ========================================================= */
@@ -34,9 +39,11 @@
       return;
     }
 
+    var titulo = (caja.getAttribute('data-titulo') || '').trim() || 'Audioguía';
+
     caja.innerHTML =
       '<div class="audioguia__info">' +
-        '<div class="audioguia__titulo">' + ICONO_PARLANTE + 'Audioguía</div>' +
+        '<div class="audioguia__titulo">' + ICONO_PARLANTE + titulo + '</div>' +
       '</div>' +
       '<audio controls preload="none" src="' + grabacion + '"></audio>';
   });

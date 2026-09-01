@@ -87,9 +87,25 @@
     /* Los dos párrafos son el texto que el documento pide "al pie de la
        pestaña principal", copiado literalmente. No se agrega nada más;
        la atribución de OpenStreetMap es un requisito de licencia del mapa. */
+    /* Logos institucionales, en el orden de jerarquía de la carpeta
+       "Poster/Logos" del proyecto. */
+    var logos = [
+      { archivo: 'uncuyo-siip.png', alt: 'Universidad Nacional de Cuyo · Secretaría de Investigación, Internacionales y Posgrado' },
+      { archivo: 'incihusa-conicet.jpg', alt: 'INCIHUSA · CONICET' },
+      { archivo: 'iiti.png', alt: 'Instituto de Investigaciones en Turismo e Identidad Dra. Sandra Pérez Stocco' },
+      { archivo: 'hcp.jpg', alt: 'Grupo Historia y Conservación Patrimonial' }
+    ];
+
+    var logosHtml = logos.map(function (l) {
+      return '<li class="pie__logo">' +
+        '<img src="assets/images/logos/' + l.archivo + '" alt="' + l.alt + '" loading="lazy">' +
+        '</li>';
+    }).join('');
+
     pie.className = 'pie';
     pie.innerHTML =
       '<div class="container">' +
+        '<ul class="pie__logos">' + logosHtml + '</ul>' +
         '<div class="pie__legal">' +
           '<p>Esta página web es uno de los resultados del Proyecto de Comunicación Pública de la Ciencia ' +
           '2025-2026, financiado por la Secretaría de Investigación, Internacionales y Posgrado (SIIP), ' +

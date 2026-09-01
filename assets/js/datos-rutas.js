@@ -143,16 +143,7 @@
           coords: [-33.1035, -68.559], aprox: true
         },
         {
-        // TODO verificar coordenada
-          n: 7, id: 'finca-santa-maria',
-          nombre: 'Bodega Finca Santa María',
-          url: null,
-          imagen: PLACEHOLDER,
-          resumen: '',
-          coords: [-33.108, -68.547], aprox: true
-        },
-        {
-          n: 8, id: 'olivicola-barroso',
+          n: 7, id: 'olivicola-barroso',
           nombre: 'Olivícola Barroso hnos',
           url: 'olivicolaBarroso.html',
           imagen: 'assets/images/olivicolaBarroso.jpeg',
@@ -160,7 +151,7 @@
           coords: [-33.10580705638048, -68.55159731907658], aprox: false
         },
         {
-          n: 9, id: 'nietas-de-lipari',
+          n: 8, id: 'nietas-de-lipari',
           nombre: 'Bodega Nietas de Liparí',
           url: 'nietasDeLipari.html',
           imagen: 'assets/images/Nietas%20de%20Lipar%C3%AD.jpeg',
@@ -168,30 +159,12 @@
           coords: [-33.11169889090452, -68.54578283441923], aprox: false
         },
         {
-        // TODO verificar coordenada
-          n: 10, id: 'informador-turistico',
-          nombre: 'Informador turístico de Junín',
-          url: 'informadorTuristico.html',
-          imagen: PLACEHOLDER,
-          resumen: 'Se localiza en el predio contiguo a la rotonda del Agua y el Trabajo, sobre la Ruta Provincial 60 , en Los Barriales.',
-          coords: [-33.1129, -68.546], aprox: true
-        },
-        {
-          n: 11, id: 'monumento-agua-trabajo',
+          n: 9, id: 'monumento-agua-trabajo',
           nombre: 'Monumento al Agua y al Trabajo',
           url: 'monumentoAguaTrabajo.html',
           imagen: PLACEHOLDER,
           resumen: 'Este hito se localiza en la rotonda de calle Miguez y Ruta Provincial 60 , rodeado por un paisaje donde todavía predominan las áreas cultivadas mayormente con vid y olivos.',
           coords: [-33.11364683301512, -68.54512979024025], aprox: false
-        },
-        {
-        // TODO verificar coordenada
-          n: 12, id: 'hugo-zamora',
-          nombre: 'Bodega Hugo Zamora',
-          url: null,
-          imagen: PLACEHOLDER,
-          resumen: '',
-          coords: [-33.1175, -68.539], aprox: true
         }
         ]
       }
