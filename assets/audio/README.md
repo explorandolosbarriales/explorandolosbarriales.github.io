@@ -11,6 +11,8 @@ del navegador: si una página no tiene grabación, no aparece el reproductor.
 |---|---|
 | Contexto general (parte 1) | `contexto-general-1.mp3` |
 | Contexto general (parte 2) | `contexto-general-2.mp3` |
+| Contexto general (parte 3) | `contexto-general-3.mp3` |
+| Contexto general (parte 4) | `contexto-general-4.mp4` |
 | Ruta Histórica | `ruta-historica.mp4` |
 | Ruta Productiva | `ruta-productiva.mp4` |
 

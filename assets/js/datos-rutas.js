@@ -28,7 +28,7 @@
           n: 1, id: 'molino-orfila',
           nombre: 'Molino Orfila',
           url: 'molinoOrfila.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/orfila-2.jpg',
           resumen: 'En 1816, el General José de San Martín refiere a Los Barriales cuando eleva un pedido al Gobernador Intendente Toribio Luzuriaga, para ser acreedor de 250 cuadras (que, medidas en hectáreas equivalen a 394) de terreno para establecer allí su chacra.',
           coords: [-33.165, -68.55], aprox: true
         },
@@ -37,7 +37,7 @@
           n: 2, id: 'union-vecinal',
           nombre: 'Unión Vecinal de Servicios Públicos Los Barriales',
           url: 'unionVecinal.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/unionVecinal.jpeg',
           resumen: 'La Unión Vecinal de Servicios Públicos Los Barriales ha sido, desde hace décadas, una de las instituciones más representativas del distrito.',
           coords: [-33.0979, -68.5705], aprox: true
         },
@@ -45,7 +45,7 @@
           n: 3, id: 'plaza-mercedes-tomasa',
           nombre: 'Plaza Mercedes Tomasa de San Martín y Pirámide Los Barriales',
           url: 'plazaMercedesTomasa.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/contexto-fig-14.jpg',
           resumen: 'La Plaza Mercedes Tomasa de San Martín constituye el principal espacio público y cívico de Los Barriales.',
           coords: [-33.097148385437414, -68.57226223184199], aprox: false
         },
@@ -53,7 +53,7 @@
           n: 4, id: 'capilla',
           nombre: 'Capilla Nuestra Señora de la Luz',
           url: 'capilla.html',
-          imagen: 'assets/images/Capilla%20Nuestra%20Se%C3%B1ora%20de%20la%20Luz.jpeg',
+          imagen: 'assets/images/portadacapilla.jpg',
           resumen: 'Se sitúa frente a la plaza de Los Barriales, lo que facilita su reconocimiento a la distancia.',
           coords: [-33.097651589908914, -68.57180047674866], aprox: false
         },
@@ -61,7 +61,7 @@
           n: 5, id: 'escuela-gervasio-posadas',
           nombre: 'Escuela 1-019 Gervasio A. Posadas',
           url: 'escuelaGervasioPosadas.html',
-          imagen: 'assets/images/Escuela%20Gervasio%20Posadas.jpeg',
+          imagen: 'assets/images/escuela.jpg',
           resumen: 'Se ubica en la calle Remedios de Escalada s/n, a 100 metros al noroeste de la plaza distrital.',
           coords: [-33.09647835202471, -68.5728215957926], aprox: false
         },
@@ -70,7 +70,7 @@
           n: 6, id: 'estacion-benjamin-matienzo',
           nombre: 'Estación Benjamin Matienzo',
           url: 'estacionBenjaminMatienzo.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/estacion-02.jpg',
           resumen: 'La estación ferroviaria se ubica sobre el Carril Nuevo (RP61), a 700 metros al norte de la Ruta provincial 60 y en proximidad a la Calle Remedios de Escalada, uno de los principales ejes históricos del distrito.',
           coords: [-33.0909, -68.566], aprox: true
         },
@@ -79,7 +79,7 @@
           n: 7, id: 'cementerio-distrital',
           nombre: 'Cementerio distrital',
           url: 'cementerioDistrital.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/cementerio-01.jpg',
           resumen: 'El Cementerio Distrital fue creado hacia fines del siglo XIX y conserva sepulturas que datan de 1890.',
           coords: [-33.0885, -68.576], aprox: true
         }
@@ -97,7 +97,7 @@
           n: 1, id: 'arroyo-claro',
           nombre: 'Arroyo Claro',
           url: 'arroyoClaro.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/Puente%20Arroyo%20Claro.jpg',
           resumen: 'El Humedal arroyo Claro se localiza al noreste del distrito Los Barriales, sobre el Carril Nuevo (RP61), a 700 metros al norte de la Ruta provincial 60, s/n.',
           coords: [-33.086, -68.562], aprox: true
         },
@@ -113,7 +113,7 @@
           n: 3, id: 'benedetti',
           nombre: 'Bodega Benedetti',
           url: 'benedetti.html',
-          imagen: 'assets/images/Benedetti.jpg',
+          imagen: 'assets/images/portadaBenedetti.jpeg',
           resumen: 'Bodegas y Viñedos Benedetti es una empresa familiar fundada en 1948 por Próspero Antonio Benedetti, descendiente de inmigrantes italianos.',
           coords: [-33.11247083912999, -68.59922660558345], aprox: false
         },
@@ -121,7 +121,7 @@
           n: 4, id: 'alter-ego',
           nombre: 'Bodega Alter Ego',
           url: 'alterEgo.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/AlterEgo.jpg',
           resumen: 'Se ubica sobre la Ruta Provincial 60, y fue construida en 1966.',
           coords: [-33.09454710762305, -68.58269190558468], aprox: false
         },
@@ -129,7 +129,7 @@
           n: 5, id: 'juan-puppato',
           nombre: 'Bodega Juan Puppato',
           url: 'bodegaPuppato.html',
-          imagen: 'assets/images/bodegaPupatto.png',
+          imagen: 'assets/images/PuppatoPortada.jpg',
           resumen: 'Localizada sobre Ruta Provincial 60, a 100 metros al oeste de calle Cura. Fue construida en 1941, aunque los viñedos datan de 1910.',
           coords: [-33.10088133186869, -68.56488259209146], aprox: false
         },
@@ -146,7 +146,7 @@
           n: 7, id: 'olivicola-barroso',
           nombre: 'Olivícola Barroso hnos',
           url: 'olivicolaBarroso.html',
-          imagen: 'assets/images/olivicolaBarroso.jpeg',
+          imagen: 'assets/images/Acceso.png',
           resumen: 'Aunque la vitivinicultura constituye la actividad agrícola más característica de Mendoza, el cultivo del olivo también posee una extensa trayectoria en la provincia.',
           coords: [-33.10580705638048, -68.55159731907658], aprox: false
         },
@@ -162,7 +162,7 @@
           n: 9, id: 'monumento-agua-trabajo',
           nombre: 'Monumento al Agua y al Trabajo',
           url: 'monumentoAguaTrabajo.html',
-          imagen: PLACEHOLDER,
+          imagen: 'assets/images/Monumento4.jpg',
           resumen: 'Este hito se localiza en la rotonda de calle Miguez y Ruta Provincial 60 , rodeado por un paisaje donde todavía predominan las áreas cultivadas mayormente con vid y olivos.',
           coords: [-33.11364683301512, -68.54512979024025], aprox: false
         }

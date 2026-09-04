@@ -670,6 +670,22 @@ img { max-width: 100%; height: auto; }
 .galeria img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .galeria figcaption { font-size: .82rem; color: var(--gris); padding: .6rem .9rem; }
 
+/* Figuras del contexto general: mapas, planos y reproducciones de archivo.
+   Recortarlas al encuadre 4:3 de .galeria les haría perder información, así
+   que conservan la proporción del original. */
+.galeria--natural figure { display: flex; flex-direction: column; }
+.galeria--natural img {
+  aspect-ratio: auto;
+  height: 300px;
+  object-fit: contain;
+  background: #fff;
+  padding: .5rem;
+}
+.galeria--natural figcaption { margin-top: auto; }
+
+/* Las tomas verticales se acotan para que no dominen la lectura. */
+.figura-hito--retrato { max-width: 430px; margin-left: auto; margin-right: auto; }
+
 /* ---------- Ficha lateral del hito ---------- */
 
 .ficha {
