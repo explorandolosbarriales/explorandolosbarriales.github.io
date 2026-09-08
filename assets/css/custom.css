@@ -192,6 +192,14 @@ img { max-width: 100%; height: auto; }
 .nav-boton[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-boton[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
+/* Con siete secciones la barra queda justa entre 992 y 1199 px:
+   se aprieta el menú antes de caer al botón hamburguesa. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-marca { font-size: 1rem; }
+  .nav-marca small { font-size: .6rem; letter-spacing: .12em; }
+  .nav-lista a { font-size: .8rem; padding: .45rem .5rem; }
+}
+
 @media (max-width: 991px) {
   .nav-boton { display: block; }
   .nav-sitio { background: rgba(78, 18, 25, .97); }
@@ -768,9 +776,18 @@ img { max-width: 100%; height: auto; }
 
 /* ---------- Pie de página ---------- */
 
-.pie { background: var(--tierra); color: rgba(255, 255, 255, .78); padding: 3rem 0 2.5rem; font-size: .92rem; }
+/* Fondo blanco: los logos institucionales fueron pensados para fondo
+   claro, así que sobre blanco se integran al pie en vez de leerse como
+   imágenes pegadas encima de un color. */
+.pie {
+  background: #fff;
+  color: var(--gris);
+  padding: 3rem 0 2.5rem;
+  font-size: .92rem;
+  border-top: 1px solid var(--linea);
+}
 .pie h3 {
-  color: #fff;
+  color: var(--tierra);
   font-size: .78rem;
   font-weight: 600;
   letter-spacing: .18em;
@@ -779,27 +796,23 @@ img { max-width: 100%; height: auto; }
 }
 .pie ul { list-style: none; margin: 0; padding: 0; }
 .pie li { margin-bottom: .55rem; }
-.pie a { color: rgba(255, 255, 255, .78); }
-.pie a:hover { color: var(--dorado); text-decoration: none; }
+.pie a { color: var(--bordo); }
+.pie a:hover { color: var(--bordo-claro); text-decoration: none; }
 /* Logos institucionales, en el orden de jerarquía del proyecto.
-   Cada uno va sobre una placa blanca porque los originales fueron
-   pensados para fondo claro y el pie es de color tierra. */
+   Sin placa ni recuadro: el blanco del pie es el mismo blanco del logo. */
 .pie__logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.6rem 2.4rem;
   list-style: none;
   margin: 0 0 2.2rem;
   padding: 0 0 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  border-bottom: 1px solid var(--linea);
 }
 .pie__logo {
   margin: 0;
-  background: #fff;
-  border-radius: 6px;
-  padding: .7rem 1rem;
   display: flex;
   align-items: center;
 }
@@ -807,8 +820,9 @@ img { max-width: 100%; height: auto; }
   display: block;
   width: auto;
   height: auto;
-  max-height: 48px;
-  max-width: 200px;
+  max-height: 56px;
+  max-width: 210px;
+  mix-blend-mode: multiply;
 }
 
 .pie__legal {
@@ -816,16 +830,16 @@ img { max-width: 100%; height: auto; }
   margin: 0 auto;
   font-size: .85rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, .68);
+  color: var(--gris);
   text-align: justify;
 }
 .pie__legal p { margin-bottom: 1rem; }
-.pie__legal a { color: rgba(255, 255, 255, .78); text-decoration: underline; }
+.pie__legal a { color: var(--bordo); text-decoration: underline; }
 .pie__atribucion {
   text-align: center;
   font-size: .78rem;
-  color: rgba(255, 255, 255, .45);
-  border-top: 1px solid rgba(255, 255, 255, .12);
+  color: rgba(107, 98, 89, .75);
+  border-top: 1px solid var(--linea);
   padding-top: 1.2rem;
   margin-bottom: 0;
 }

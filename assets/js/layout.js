@@ -21,7 +21,8 @@
     { id: 'historica', texto: 'Ruta Histórica', url: 'rutaHistorica.html' },
     { id: 'productiva', texto: 'Ruta Productiva', url: 'rutaProductiva.html' },
     { id: 'protagonistas', texto: 'Protagonistas', url: 'protagonistas.html' },
-    { id: 'bibliografia', texto: 'Bibliografía', url: 'bibliografia.html' }
+    { id: 'bibliografia', texto: 'Bibliografía', url: 'bibliografia.html' },
+    { id: 'agradecimientos', texto: 'Agradecimientos', url: 'agradecimientos.html' }
   ];
 
   var marcaSvg =
@@ -91,7 +92,7 @@
        "Poster/Logos" del proyecto. */
     var logos = [
       { archivo: 'uncuyo-siip.png', alt: 'Universidad Nacional de Cuyo · Secretaría de Investigación, Internacionales y Posgrado' },
-      { archivo: 'incihusa-conicet.jpg', alt: 'INCIHUSA · CONICET' },
+      /* { archivo: 'incihusa-conicet.jpg', alt: 'INCIHUSA · CONICET' }, */ /* fuera momentáneamente */
       { archivo: 'iiti.png', alt: 'Instituto de Investigaciones en Turismo e Identidad Dra. Sandra Pérez Stocco' },
       { archivo: 'hcp.jpg', alt: 'Grupo Historia y Conservación Patrimonial' }
     ];
