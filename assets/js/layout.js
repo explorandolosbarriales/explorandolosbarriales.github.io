@@ -92,7 +92,7 @@
        "Poster/Logos" del proyecto. */
     var logos = [
       { archivo: 'uncuyo-siip.png', alt: 'Universidad Nacional de Cuyo · Secretaría de Investigación, Internacionales y Posgrado' },
-      /* { archivo: 'incihusa-conicet.jpg', alt: 'INCIHUSA · CONICET' }, */ /* fuera momentáneamente */
+      { archivo: 'incihusa-conicet.jpg', alt: 'INCIHUSA · CONICET' }, 
       { archivo: 'iiti.png', alt: 'Instituto de Investigaciones en Turismo e Identidad Dra. Sandra Pérez Stocco' },
       { archivo: 'hcp.jpg', alt: 'Grupo Historia y Conservación Patrimonial' }
     ];
